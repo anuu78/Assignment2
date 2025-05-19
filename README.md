@@ -7,19 +7,29 @@ The app demonstrates secure login, dashboard data display, and detail viewing by
 
 ## 1. Features
 
-1.1 Login Screen
-- Authenticates users using their first name and student ID (e.g., `s12345678`).
-- Uses location-based login endpoints (`/footscray/auth`, `/sydney/auth`, `/ort/auth`).
+ 1.1 Login Screen
+Users can log in by entering their first name and student ID (e.g., s12345678).
 
-1.2 Dashboard Screen
-- Displays a list of travel destinations from the API using the `keypass`.
-- Uses a RecyclerView for clean and scrollable data display.
+The app verifies credentials through specific campus-based endpoints:
 
-1.3 Details Screen
-- Shows detailed information about a destination, including long descriptions.
+/footscray/auth
 
-1.4 Logout
-- Lets users return to the login screen from the details screen.
+/sydney/auth
+
+/ort/auth
+
+ 1.2 Dashboard Screen
+After logging in, the app retrieves a list of travel destinations using a unique keypass.
+
+A RecyclerView is used to neatly display this list in a scrollable format.
+
+ 1.3 Details Screen
+Tapping on a destination opens a page with in-depth information and a longer description.
+
+ 1.4 Logout Function
+Users have the option to log out from the details page, which brings them back to the login screen.
+
+
 
 
 
@@ -149,8 +159,8 @@ III.If successful, you will see the list of destinations.
 6.Press Logout to return to the login screen.
 
 ## 9. License
-This project was developed for academic purposes as part of the NIT3213 course at Victoria University and
-Use is limited to educational demonstrations and assessments.
+This app was developed for educational use only as part of the NIT3213 course at Victoria University.
+It can only be used for demonstrations and assignments.
 
 ## 10. Author
 Student Name: Sagya Gurung
